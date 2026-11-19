@@ -167,7 +167,7 @@ void initSDL(void) {
 	screen = SDL_CreateRGBSurface (actualScreen->flags,
 //		actualScreen->w,
 //		actualScreen->h,
-		BLIT_WIDTH,
+		320,	// graphics.cpp draws lines SIZEX (320) pixels apart
 		BLIT_HEIGHT,
 		actualScreen->format->BitsPerPixel,
 		actualScreen->format->Rmask,
